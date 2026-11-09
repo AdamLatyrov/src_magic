@@ -1,0 +1,14 @@
+_type: prompt
+input_variables:
+  - material
+  - context
+template: |
+  ---
+
+  ## Входные данные
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}
+
+  [КОНТЕКСТ ПРЕДЫДУЩИХ КАДРОВ]
+  {context}

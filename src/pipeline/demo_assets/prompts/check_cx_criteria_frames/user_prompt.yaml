@@ -1,0 +1,44 @@
+_type: prompt
+input_variables:
+  - batch
+  - block_essence
+  - block_key
+  - block_name
+  - criteria
+  - criteria_count
+  - defect_count
+  - frames_text
+  - journey
+  - material
+  - required_keys
+  - tally
+template: |
+  ---
+
+  ## Входные данные
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}
+
+  [КРИТЕРИЙ]
+  {block_key} — {block_name}
+
+  Что проверяет критерий: {block_essence}
+
+  [ПОДКРИТЕРИИ И ИХ ДЕФЕКТЫ]
+  Подкритериев в блоке: {criteria_count}. Известных дефектов: {defect_count}.
+  Порядок ключей ответа: {required_keys}
+
+  {criteria}
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}
+
+  [ЧАСТЬ ПУТИ]
+  {batch}
+
+  [СЧЁТ ПУТИ]
+  {tally}
+
+  [ТЕКСТЫ КАДРОВ]
+  {frames_text}

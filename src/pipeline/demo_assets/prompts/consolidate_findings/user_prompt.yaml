@@ -1,0 +1,30 @@
+_type: prompt
+input_variables:
+  - block_count
+  - block_keys
+  - checks
+  - finding_count
+  - journey
+  - material
+  - raw_findings
+template: |
+  ---
+
+  ## Входные данные
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}
+
+  [МАТЕРИАЛЫ ПУТИ]
+  {material}
+
+  [БЛОКИ ОЦЕНКИ]
+  Проверок: {block_count}
+  {block_keys}
+
+  [ПОДКРИТЕРИИ БЛОКОВ]
+  {checks}
+
+  [СЫРЫЕ НАХОДКИ]
+  Сырых находок: {finding_count}
+  {raw_findings}

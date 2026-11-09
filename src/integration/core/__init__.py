@@ -1,0 +1,1 @@
+"""core — часть integration."""

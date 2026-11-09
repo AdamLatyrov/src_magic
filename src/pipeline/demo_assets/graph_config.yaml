@@ -1,0 +1,158 @@
+journey_exploration:
+  stop_after: 5
+  context_last: 10
+  scan_frame:
+    prompts_dir: prompts/scan_journey_frame/
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+summarize_journey:
+  prompts_dir: prompts/summarize_journey/
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+check_cx_criteria:
+  prompts_dir: prompts/check_cx_criteria_frames/
+  criteria_model: configs/service_configs/criteria_model_v3_2.json
+  max_images_per_request: 10
+  frames_per_request: 10
+  min_frames_per_request: 4
+  max_len: 300
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+journey_frictions:
+  checks:
+  - check_key: route_length
+    name: Маршрут длиннее, чем должен быть
+    units:
+    - Р1
+    - Р2
+    - Р3
+    - Р4
+    - Р5
+    - Р6
+    prompts_dir: prompts/journey_frictions/route_length/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+  - check_key: manual_effort
+    name: Лишний ручной ввод и повторы
+    units:
+    - Р1
+    - Р2
+    - Р3
+    - Р4
+    - Р5
+    - Р6
+    prompts_dir: prompts/journey_frictions/manual_effort/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+  - check_key: blockers
+    name: Тупики, ошибки и обрывы маршрута
+    units:
+    - Р1
+    - Р2
+    - Р3
+    - Р4
+    - Р5
+    - Р6
+    - Р7
+    prompts_dir: prompts/journey_frictions/blockers/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+  - check_key: disclosure
+    name: Условия и стоимость раскрыты слишком поздно
+    units:
+    - Р1
+    - Р2
+    - Р3
+    - Р4
+    - Р5
+    - Р6
+    prompts_dir: prompts/journey_frictions/disclosure/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+  - check_key: navigation_clarity
+    name: Непонятно, где клиент и что дальше
+    units:
+    - Н1
+    - Н2
+    - Н3
+    - Н4
+    - Н5
+    - Н6
+    - Н7
+    - Н8
+    prompts_dir: prompts/journey_frictions/navigation_clarity/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+  - check_key: trust
+    name: Обещанное расходится с делающимся
+    units:
+    - Р1
+    - Р2
+    - Р3
+    - Р4
+    - Р5
+    prompts_dir: prompts/journey_frictions/trust/
+    max_images_per_request: 10
+    frames_per_request: 10
+    temperature: 0.001
+    top_p: 0.1
+    max_tokens: 8192
+map_journey_frictions:
+  prompts_dir: prompts/map_journey_frictions/
+  criteria_model: configs/service_configs/criteria_model_v3_2.json
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+autofill:
+  prompts_dir: prompts/autofill/
+  max_images_per_request: 10
+  batch_frames: 10
+  min_frames_per_request: 4
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+  journey_types: []
+screen:
+  prompts_dir: prompts/screen/
+  criteria_model: configs/service_configs/criteria_model_v3_2.json
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+  blocks: []
+  max_images_per_request: 10
+  context_frames: 2
+summarize_screen:
+  prompts_dir: prompts/summarize_screen/
+  criteria_model: configs/service_configs/criteria_model_v3_2.json
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+  blocks: []
+consolidate_findings:
+  prompts_dir: prompts/consolidate_findings/
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192
+dedup_findings:
+  prompts_dir: prompts/dedup_findings/
+  temperature: 0.001
+  top_p: 0.1
+  max_tokens: 8192

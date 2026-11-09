@@ -1,0 +1,1 @@
+"""Модуль персиста результата: порт `ResultWriter` и адаптер `DBResultAdaptor`."""

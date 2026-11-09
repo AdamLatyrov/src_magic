@@ -1,0 +1,12 @@
+# Проверенные версии окружения pipeline и ноутбука.
+gigachat==0.2.4
+httpx==0.28.1
+ipykernel==7.4.0
+langchain-classic==1.0.8
+langchain-core==1.7.6
+langchain-gigachat==0.5.1
+langgraph==1.2.20
+pydantic==2.14.3
+pydantic-settings==2.16.2
+PyYAML==6.0.3
+tenacity==9.2.1

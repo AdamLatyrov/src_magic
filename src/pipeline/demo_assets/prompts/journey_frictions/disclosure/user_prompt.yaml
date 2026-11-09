@@ -1,0 +1,28 @@
+_type: prompt
+input_variables:
+  - evidence_rules
+  - friction_rules
+  - journey
+  - material
+template: |
+  ---
+
+  ## Правила доказательства
+
+  {evidence_rules}
+
+  ---
+
+  ## Формат вывода
+
+  {friction_rules}
+
+  ---
+
+  ## Входные данные
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}

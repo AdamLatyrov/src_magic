@@ -1,0 +1,1 @@
+"""state — часть pipeline."""

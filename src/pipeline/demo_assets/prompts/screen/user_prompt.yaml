@@ -1,0 +1,18 @@
+_type: prompt
+input_variables:
+  - criteria_examples
+  - journey
+  - material
+template: |
+  ---
+
+  ## Входные данные
+
+  [ПРИМЕРЫ ОТКЛОНЕНИЙ]
+  {criteria_examples}
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}

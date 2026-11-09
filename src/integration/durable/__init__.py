@@ -1,0 +1,1 @@
+"""Модуль очереди заданий: порт `QueuePort` и реализация `EvalJobsRepository`."""

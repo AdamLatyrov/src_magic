@@ -1,0 +1,1 @@
+"""catalog — часть pipeline."""

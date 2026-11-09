@@ -1,0 +1,21 @@
+_type: prompt
+input_variables:
+  - coverage
+  - frames_text
+  - journey_values
+  - material
+template: |
+  ---
+
+  ## Входные данные
+
+  [ОПИСАНИЯ КАДРОВ]
+  Разобрано кадров: {coverage}.
+
+  {frames_text}
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}
+
+  [ДОПУСТИМЫЕ ТИПЫ ПУТИ]
+  {journey_values}

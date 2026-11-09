@@ -1,0 +1,18 @@
+_type: prompt
+input_variables:
+  - criteria_reference
+  - findings
+  - journey
+template: |
+  ---
+
+  ## Входные данные
+
+  [НАХОДКИ ПОЭКРАННОГО ПРОХОДА]
+  {findings}
+
+  [СПРАВОЧНИК ДЕФЕКТОВ]
+  {criteria_reference}
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}

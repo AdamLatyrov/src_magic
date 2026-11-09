@@ -1,0 +1,1 @@
+"""agent — часть pipeline."""

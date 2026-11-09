@@ -1,0 +1,14 @@
+_type: prompt
+input_variables:
+  - journey
+  - material
+template: |
+  ---
+
+  ## Входные данные
+
+  [ЧТО ЭТО ЗА ПУТЬ]
+  {journey}
+
+  [ЗАМЕТКА ЭКСПЕРТА]
+  {material}

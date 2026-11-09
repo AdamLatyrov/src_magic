@@ -1,0 +1,18 @@
+_type: prompt
+input_variables:
+  - current_count
+  - current_findings
+  - previous_count
+  - previous_findings
+template: |
+  ---
+
+  ## Входные данные
+
+  [ПРОШЛЫЕ НАХОДКИ]
+  Прошлых находок: {previous_count}
+  {previous_findings}
+
+  [НАХОДКИ ТЕКУЩЕГО ПРОГОНА]
+  Находок текущего прогона: {current_count}
+  {current_findings}

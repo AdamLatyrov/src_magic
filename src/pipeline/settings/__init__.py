@@ -1,0 +1,1 @@
+"""settings — часть pipeline."""
